@@ -12,17 +12,13 @@
         tools:layout="@layout/fragment_first">
 
         <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
+            android:id="@+id/action_FirstFragment_to_MyDialogFragment"
+            app:destination="@id/myDialog" />
     </fragment>
-    <fragment
-        android:id="@+id/SecondFragment"
-        android:name="com.example.android.bottomsheetdialogsample.SecondFragment"
-        android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
 
-        <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
-    </fragment>
+    <dialog
+        android:id="@+id/myDialog"
+        android:name="com.example.android.bottomsheetdialogsample.MyDialogFragment"
+        android:label="MyDialog" />
+
 </navigation>
